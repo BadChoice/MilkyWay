@@ -1,5 +1,6 @@
 import UIKit
 import RevoUIComponents
+import RevoFoundation
 
 class ProductViewController : UITableViewController {
     var product:Product!
@@ -19,6 +20,8 @@ class ProductViewController : UITableViewController {
     @IBOutlet weak var saturatedFatLabel:UILabel!
     @IBOutlet weak var sugarsLabel:UILabel!
     
+    @IBOutlet weak var lactoseWarning: UIImageView!
+    
     override func viewDidLoad() {
         imageView.round(4).downloaded(from: product.image_url, contentMode: .scaleAspectFill)
         
@@ -27,20 +30,35 @@ class ProductViewController : UITableViewController {
         if let nutriscore = product.nutriscore_grade {
             nutriscoreLabel.text = nutriscore.rawValue.uppercased()
             nutriscoreLabel.circle().backgroundColor = nutriscore.color
-        }else{
+        } else {
             nutriscoreLabel.isHidden = true
         }
         
-        allergensLabel.text   = product.allergens_tags.implode("\n")
+        lactoseWarning.isHidden = !product.hasLactose()
+        
+        allergensLabel.text   = product.allergens_tags.map { $0.after(":") }.implode("\n")
         ingredientsLabel.text = product.ingredients_text
-        additiviesLabel.text  = product.additives_tags.implode("\n")
-        analysisLabel.text    = product.ingredients_analysis_tags?.implode("\n")
+        ingredientsLabel.text = product.ingredients_tags?.map { $0.after(":") }.implode("\n")
+        additiviesLabel.text  = additivesMap() //product.additives_tags.map { $0.after(":") }.implode("\n")
+        analysisLabel.text    = product.ingredients_analysis_tags?.map { $0.after(":") }.implode("\n")
         
         
-        fatLabel.text = "Grasses: \(product.nutrient_levels.fat ?? "?")"
-        saltLabel.text = "Sal: \(product.nutrient_levels.salt ?? "?")"
+        fatLabel.text          = "Grasses: \(product.nutrient_levels.fat ?? "?")"
+        saltLabel.text         = "Sal: \(product.nutrient_levels.salt ?? "?")"
         saturatedFatLabel.text = "Grasses saturades: \(product.nutrient_levels.saturated_fat  ?? "?")"
-        sugarsLabel.text = "Sucre: \(product.nutrient_levels.sugars ?? "?")"
+        sugarsLabel.text       = "Sucre: \(product.nutrient_levels.sugars ?? "?")"
         
+    }
+    
+    func additivesMap() -> String {
+        let additiveInfos = Additives().codes
+        return product.additives_tags.map {
+            $0.after(":")
+        }.map { additive in
+            if let info = (additiveInfos.first { ("e" + $0.0) == additive}) {
+                return "\(additive) • \(info.1),  Class:\(info.2)  Purpose: \(info.3)"
+            }
+            return additive
+        }.implode("\n")
     }
 }

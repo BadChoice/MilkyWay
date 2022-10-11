@@ -19,7 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bix-5q-nFt">
                                 <rect key="frame" x="16" y="742" width="358" height="50"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4ao-0S-JKY"/>
                                 </constraints>
@@ -113,6 +113,11 @@
                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exclamationmark.triangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2x7-Pp-3V6">
+                                                    <rect key="frame" x="176" y="88" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="fp9-VL-CaX" firstAttribute="top" secondItem="Sia-zn-KGk" secondAttribute="topMargin" id="1eQ-co-GF3"/>
@@ -329,6 +334,7 @@
                         <outlet property="fatLabel" destination="jHt-6H-wy1" id="lqx-qx-M0w"/>
                         <outlet property="imageView" destination="pBX-lq-WhC" id="dwi-DE-E0U"/>
                         <outlet property="ingredientsLabel" destination="zu5-ZS-7Gm" id="Zcw-w5-8RK"/>
+                        <outlet property="lactoseWarning" destination="2x7-Pp-3V6" id="ucN-uv-qui"/>
                         <outlet property="nameLabel" destination="fp9-VL-CaX" id="3ai-zP-sIk"/>
                         <outlet property="nutriscoreLabel" destination="Arp-Vi-FOF" id="k2v-uw-7r7"/>
                         <outlet property="saltLabel" destination="JXR-eA-Ws6" id="GBp-dd-MqB"/>
@@ -343,6 +349,7 @@
     </scenes>
     <resources>
         <image name="barcode.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="109"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -352,11 +359,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

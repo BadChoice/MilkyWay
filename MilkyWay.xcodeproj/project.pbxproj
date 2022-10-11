@@ -19,6 +19,7 @@
 		BB114E4328F5B949007093E6 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4228F5B949007093E6 /* ProductViewController.swift */; };
 		BB114E4528F5BB10007093E6 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4428F5BB10007093E6 /* ScanViewController.swift */; };
 		BB114E4A28F5C163007093E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4928F5C163007093E6 /* Extensions.swift */; };
+		BB114E4C28F5D5D4007093E6 /* Additives.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4B28F5D5D4007093E6 /* Additives.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		BB114E4228F5B949007093E6 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		BB114E4428F5BB10007093E6 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		BB114E4928F5C163007093E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BB114E4B28F5D5D4007093E6 /* Additives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Additives.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				BB114E4028F5B29C007093E6 /* OpenFoodFactsApi.swift */,
 				BB114E3E28F5B27E007093E6 /* Product.swift */,
+				BB114E4B28F5D5D4007093E6 /* Additives.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				BB114E4528F5BB10007093E6 /* ScanViewController.swift in Sources */,
 				BB114E2E28F5B101007093E6 /* ViewController.swift in Sources */,
 				BB114E4A28F5C163007093E6 /* Extensions.swift in Sources */,
+				BB114E4C28F5D5D4007093E6 /* Additives.swift in Sources */,
 				BB114E4128F5B29C007093E6 /* OpenFoodFactsApi.swift in Sources */,
 				BB114E3F28F5B27E007093E6 /* Product.swift in Sources */,
 				BB114E2A28F5B101007093E6 /* AppDelegate.swift in Sources */,
