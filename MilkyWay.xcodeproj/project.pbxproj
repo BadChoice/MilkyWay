@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F8638BD6AC55BB1FEE0B52E /* Pods_MilkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E200D8B0BBA97D78CBEFE70 /* Pods_MilkyWay.framework */; };
 		BB114E2A28F5B101007093E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E2928F5B101007093E6 /* AppDelegate.swift */; };
 		BB114E2C28F5B101007093E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E2B28F5B101007093E6 /* SceneDelegate.swift */; };
 		BB114E2E28F5B101007093E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E2D28F5B101007093E6 /* ViewController.swift */; };
 		BB114E3128F5B101007093E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB114E2F28F5B101007093E6 /* Main.storyboard */; };
 		BB114E3328F5B102007093E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB114E3228F5B102007093E6 /* Assets.xcassets */; };
 		BB114E3628F5B102007093E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB114E3428F5B102007093E6 /* LaunchScreen.storyboard */; };
+		BB114E3F28F5B27E007093E6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E3E28F5B27E007093E6 /* Product.swift */; };
+		BB114E4128F5B29C007093E6 /* OpenFoodFactsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4028F5B29C007093E6 /* OpenFoodFactsApi.swift */; };
+		BB114E4328F5B949007093E6 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4228F5B949007093E6 /* ProductViewController.swift */; };
+		BB114E4528F5BB10007093E6 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4428F5BB10007093E6 /* ScanViewController.swift */; };
+		BB114E4A28F5C163007093E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4928F5C163007093E6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		212CC99A7725A39DDAF5CF36 /* Pods-MilkyWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilkyWay.debug.xcconfig"; path = "Target Support Files/Pods-MilkyWay/Pods-MilkyWay.debug.xcconfig"; sourceTree = "<group>"; };
+		6E200D8B0BBA97D78CBEFE70 /* Pods_MilkyWay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MilkyWay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC61D471CF1DC4C4B2C7A375 /* Pods-MilkyWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MilkyWay.release.xcconfig"; path = "Target Support Files/Pods-MilkyWay/Pods-MilkyWay.release.xcconfig"; sourceTree = "<group>"; };
 		BB114E2628F5B101007093E6 /* MilkyWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MilkyWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB114E2928F5B101007093E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB114E2B28F5B101007093E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		BB114E3228F5B102007093E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB114E3528F5B102007093E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB114E3728F5B102007093E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB114E3E28F5B27E007093E6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		BB114E4028F5B29C007093E6 /* OpenFoodFactsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFoodFactsApi.swift; sourceTree = "<group>"; };
+		BB114E4228F5B949007093E6 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		BB114E4428F5BB10007093E6 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		BB114E4928F5C163007093E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8638BD6AC55BB1FEE0B52E /* Pods_MilkyWay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				BB114E2828F5B101007093E6 /* MilkyWay */,
 				BB114E2728F5B101007093E6 /* Products */,
+				E9164423B8F54C31396D78CB /* Pods */,
+				C7E7D9C86AF0B1C5EB18A7AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,53 @@
 		BB114E2828F5B101007093E6 /* MilkyWay */ = {
 			isa = PBXGroup;
 			children = (
+				BB114E4728F5BB5A007093E6 /* Api */,
+				BB114E4628F5BB4E007093E6 /* Controllers */,
 				BB114E2928F5B101007093E6 /* AppDelegate.swift */,
 				BB114E2B28F5B101007093E6 /* SceneDelegate.swift */,
-				BB114E2D28F5B101007093E6 /* ViewController.swift */,
 				BB114E2F28F5B101007093E6 /* Main.storyboard */,
 				BB114E3228F5B102007093E6 /* Assets.xcassets */,
 				BB114E3428F5B102007093E6 /* LaunchScreen.storyboard */,
 				BB114E3728F5B102007093E6 /* Info.plist */,
+				BB114E4928F5C163007093E6 /* Extensions.swift */,
 			);
 			path = MilkyWay;
+			sourceTree = "<group>";
+		};
+		BB114E4628F5BB4E007093E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB114E2D28F5B101007093E6 /* ViewController.swift */,
+				BB114E4228F5B949007093E6 /* ProductViewController.swift */,
+				BB114E4428F5BB10007093E6 /* ScanViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB114E4728F5BB5A007093E6 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				BB114E4028F5B29C007093E6 /* OpenFoodFactsApi.swift */,
+				BB114E3E28F5B27E007093E6 /* Product.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		C7E7D9C86AF0B1C5EB18A7AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E200D8B0BBA97D78CBEFE70 /* Pods_MilkyWay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9164423B8F54C31396D78CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				212CC99A7725A39DDAF5CF36 /* Pods-MilkyWay.debug.xcconfig */,
+				AC61D471CF1DC4C4B2C7A375 /* Pods-MilkyWay.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB114E3A28F5B102007093E6 /* Build configuration list for PBXNativeTarget "MilkyWay" */;
 			buildPhases = (
+				51C5316F98678E06BEC5D7E3 /* [CP] Check Pods Manifest.lock */,
 				BB114E2228F5B101007093E6 /* Sources */,
 				BB114E2328F5B101007093E6 /* Frameworks */,
 				BB114E2428F5B101007093E6 /* Resources */,
+				2A651A074B2D41479FE10347 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +160,7 @@
 				};
 			};
 			buildConfigurationList = BB114E2128F5B101007093E6 /* Build configuration list for PBXProject "MilkyWay" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,12 +190,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A651A074B2D41479FE10347 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilkyWay/Pods-MilkyWay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MilkyWay/Pods-MilkyWay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MilkyWay/Pods-MilkyWay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51C5316F98678E06BEC5D7E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MilkyWay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB114E2228F5B101007093E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB114E4328F5B949007093E6 /* ProductViewController.swift in Sources */,
+				BB114E4528F5BB10007093E6 /* ScanViewController.swift in Sources */,
 				BB114E2E28F5B101007093E6 /* ViewController.swift in Sources */,
+				BB114E4A28F5C163007093E6 /* Extensions.swift in Sources */,
+				BB114E4128F5B29C007093E6 /* OpenFoodFactsApi.swift in Sources */,
+				BB114E3F28F5B27E007093E6 /* Product.swift in Sources */,
 				BB114E2A28F5B101007093E6 /* AppDelegate.swift in Sources */,
 				BB114E2C28F5B101007093E6 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +386,7 @@
 		};
 		BB114E3B28F5B102007093E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 212CC99A7725A39DDAF5CF36 /* Pods-MilkyWay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +395,7 @@
 				DEVELOPMENT_TEAM = SV3ZXK4PZF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MilkyWay/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan Aliments Barcodes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,6 +416,7 @@
 		};
 		BB114E3C28F5B102007093E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC61D471CF1DC4C4B2C7A375 /* Pods-MilkyWay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +425,7 @@
 				DEVELOPMENT_TEAM = SV3ZXK4PZF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MilkyWay/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan Aliments Barcodes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
