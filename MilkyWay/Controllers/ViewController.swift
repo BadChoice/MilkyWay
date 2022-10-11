@@ -19,12 +19,19 @@ class ViewController: UIViewController, ScanDelegate {
         errorLabel.isHidden = true
         loading.isHidden = true
         super.viewDidLoad()
+        
+        //scanner(didScan: "8000500167113")
     }
     
     @IBAction func onScanPressed(_ sender: UIButton) {
         errorLabel.isHidden = true
         let vc = ScannerViewController()
         vc.delegate = self
+        present(vc, animated: true)
+    }
+    
+    @IBAction func onOrcPressed(_ sender: Any) {
+        let vc:UINavigationController = SBController("Main", "ocr")
         present(vc, animated: true)
     }
     

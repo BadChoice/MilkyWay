@@ -20,6 +20,8 @@
 		BB114E4528F5BB10007093E6 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4428F5BB10007093E6 /* ScanViewController.swift */; };
 		BB114E4A28F5C163007093E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4928F5C163007093E6 /* Extensions.swift */; };
 		BB114E4C28F5D5D4007093E6 /* Additives.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB114E4B28F5D5D4007093E6 /* Additives.swift */; };
+		BBEC0D8028F5EB5300CF2252 /* Lactose.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEC0D7F28F5EB5300CF2252 /* Lactose.swift */; };
+		BBEC0D8228F5EE2200CF2252 /* OcrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEC0D8128F5EE2200CF2252 /* OcrViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		BB114E4428F5BB10007093E6 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		BB114E4928F5C163007093E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BB114E4B28F5D5D4007093E6 /* Additives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Additives.swift; sourceTree = "<group>"; };
+		BBEC0D7F28F5EB5300CF2252 /* Lactose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lactose.swift; sourceTree = "<group>"; };
+		BBEC0D8128F5EE2200CF2252 /* OcrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,8 @@
 		BB114E2828F5B101007093E6 /* MilkyWay */ = {
 			isa = PBXGroup;
 			children = (
-				BB114E4728F5BB5A007093E6 /* Api */,
+				BBEC0D7E28F5EB4900CF2252 /* Api */,
+				BB114E4728F5BB5A007093E6 /* Product */,
 				BB114E4628F5BB4E007093E6 /* Controllers */,
 				BB114E2928F5B101007093E6 /* AppDelegate.swift */,
 				BB114E2B28F5B101007093E6 /* SceneDelegate.swift */,
@@ -94,16 +99,25 @@
 				BB114E2D28F5B101007093E6 /* ViewController.swift */,
 				BB114E4228F5B949007093E6 /* ProductViewController.swift */,
 				BB114E4428F5BB10007093E6 /* ScanViewController.swift */,
+				BBEC0D8128F5EE2200CF2252 /* OcrViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		BB114E4728F5BB5A007093E6 /* Api */ = {
+		BB114E4728F5BB5A007093E6 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				BB114E3E28F5B27E007093E6 /* Product.swift */,
+				BB114E4B28F5D5D4007093E6 /* Additives.swift */,
+				BBEC0D7F28F5EB5300CF2252 /* Lactose.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		BBEC0D7E28F5EB4900CF2252 /* Api */ = {
 			isa = PBXGroup;
 			children = (
 				BB114E4028F5B29C007093E6 /* OpenFoodFactsApi.swift */,
-				BB114E3E28F5B27E007093E6 /* Product.swift */,
-				BB114E4B28F5D5D4007093E6 /* Additives.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -243,10 +257,12 @@
 				BB114E4328F5B949007093E6 /* ProductViewController.swift in Sources */,
 				BB114E4528F5BB10007093E6 /* ScanViewController.swift in Sources */,
 				BB114E2E28F5B101007093E6 /* ViewController.swift in Sources */,
+				BBEC0D8228F5EE2200CF2252 /* OcrViewController.swift in Sources */,
 				BB114E4A28F5C163007093E6 /* Extensions.swift in Sources */,
 				BB114E4C28F5D5D4007093E6 /* Additives.swift in Sources */,
 				BB114E4128F5B29C007093E6 /* OpenFoodFactsApi.swift in Sources */,
 				BB114E3F28F5B27E007093E6 /* Product.swift in Sources */,
+				BBEC0D8028F5EB5300CF2252 /* Lactose.swift in Sources */,
 				BB114E2A28F5B101007093E6 /* AppDelegate.swift in Sources */,
 				BB114E2C28F5B101007093E6 /* SceneDelegate.swift in Sources */,
 			);

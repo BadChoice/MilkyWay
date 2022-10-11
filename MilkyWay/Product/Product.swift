@@ -42,12 +42,10 @@ struct Product : Codable {
     let nutriscore_score:Int?
     
     public func hasLactose() -> Bool {
-        ingredients_tags?.contains {
-            $0.lowercased().contains("leche") ||
-            $0.lowercased().contains("lactosa") ||
-            $0.lowercased().contains("milk") ||
-            $0.lowercased().contains("lactose")
-        } ?? false
+        Lactose().isPresent(
+            ingredients:ingredients_tags,
+            additives:additives_tags
+        )        
     }
 }
 
